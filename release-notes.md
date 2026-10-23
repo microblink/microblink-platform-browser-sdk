@@ -1,4 +1,18 @@
+## v1.10.5
+
+### Bug fixes
+
+- Fixed a blank screen on the FaceMatch step when using the React build with React 19.
+- Added additional file validation for uploaded documents.
+
+## v1.10.4
+
+### Improvement
+
+camera-manager package version upgrade v7.3.2 -> v7.3.5
+
 ## v1.10.3
+
 Improvements
 
 Payload Image Format Optimization: We have transitioned the paylaod image format from PNG to JPEG for the Scan & Verify and Scan ID capabilities.
