@@ -1,0 +1,101 @@
+:root {
+  --brand: #4f46e5;
+  font-family: system-ui, sans-serif;
+  color: #111827;
+}
+
+body {
+  margin: 0;
+  background: #eef2ff;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Your screens and the SDK's screens share this frame, so give it a height. */
+.card {
+  width: 100%;
+  /* Wide enough for the SDK's desktop screens, e.g. the QR code for continuing on a phone. */
+  max-width: 900px;
+  height: 680px;
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgb(79 70 229 / 0.15);
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.screen h2 {
+  margin: 0 0 8px;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+button {
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #e0e7ff;
+  color: var(--brand);
+}
+
+button.link {
+  background: none;
+  color: #6b7280;
+}
+
+.steps {
+  margin: 0 0 8px;
+  padding-left: 20px;
+  line-height: 2;
+}
+
+.steps .done {
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+label.checkbox {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+input:not([type="checkbox"]) {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+}
